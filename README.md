@@ -8,3 +8,5 @@
   ### `php artisan key:generate`
 - Migrar base de datos:
   ### `php artisan migrate --seed`
+- Ejecutar Proyecto:
+  ### `php artisan serve`
