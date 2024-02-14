@@ -32,37 +32,37 @@ class DatabaseSeeder extends Seeder
         $region3->save();
 
         $province = new Province();
-        $province->name = 'Biobio';
+        $province->name = 'BIOBIO';
         $province->region_id = 2;
         $province->save();
 
         $province2 = new Province();
-        $province2->name = 'Concepción';
+        $province2->name = 'CONCEPCION';
         $province2->region_id = 1;
         $province2->save();
 
         $city = new City();
-        $city->name = 'Los Angeles';
+        $city->name = 'LOS ANGELES';
         $city->province_id = 1;
         $city->save();
 
         $city2 = new City();
-        $city2->name = 'Mulche';
+        $city2->name = 'MULCHEN';
         $city2->province_id = 2;
         $city2->save();
 
         $city3 = new City();
-        $city3->name = 'Nacimiento';
+        $city3->name = 'NACIMIENTO';
         $city3->province_id = 1;
         $city3->save();
 
         $city4 = new City();
-        $city4->name = 'Laja';
+        $city4->name = 'LAJA';
         $city4->province_id = 2;
         $city4->save();
 
         $city5 = new City();
-        $city5->name = 'Antuco';
+        $city5->name = 'ANTUCO';
         $city5->province_id = 1;
         $city5->save();
 
