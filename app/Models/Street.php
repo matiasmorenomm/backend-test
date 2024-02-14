@@ -28,7 +28,7 @@ class Street extends Model
 
     public static function store($data)
     {
-
+        $data['name'] = strtoupper($data['name']);
         if (!isset($data['name'])) {
             return response()->json(
                 [
@@ -84,7 +84,7 @@ class Street extends Model
 
     public static function edit($data, $id)
     {
-
+        $data['name'] = strtoupper($data['name']);
         $street = Street::find($id);
 
         if (!$street) {

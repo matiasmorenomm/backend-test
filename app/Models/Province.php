@@ -28,7 +28,7 @@ class Province extends Model
 
     public static function store($data)
     {
-
+        $data['name'] = strtoupper($data['name']);
         if (!isset($data['name'])) {
             return response()->json(
                 [
@@ -85,6 +85,7 @@ class Province extends Model
     public static function edit($data, $id)
     {
 
+        $data['name'] = strtoupper($data['name']);
         $province = Province::find($id);
 
         if (!$province) {

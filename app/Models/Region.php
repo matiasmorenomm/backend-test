@@ -22,6 +22,7 @@ class Region extends Model
 
     public static function store($data)
     {
+        $data['name'] = strtoupper($data['name']);
 
         $region = Region::where('name', $data['name'])->first();
 
@@ -48,6 +49,8 @@ class Region extends Model
 
     public static function edit($data, $id)
     {
+
+        $data['name'] = strtoupper($data['name']);
 
         $region = Region::find($id);
 

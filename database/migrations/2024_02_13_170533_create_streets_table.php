@@ -15,7 +15,7 @@ class CreateStreetsTable extends Migration
     {
         Schema::create('streets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
+            $table->string('name');
 
             $table->integer('city_id')->unsigned();
             $table->foreign('city_id')->references('id')->on('cities');
